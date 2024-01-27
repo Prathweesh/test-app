@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contents-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;  
+  margin:auto;
+  background-color: #F0F0F0;
+}
+
+.contents-text {
+  margin-left: 20px; 
+  align-items: center;
+  justify-content: center;
+  order:-1;  
+}
+
+.large{
+  font-size: 7vw;
+}
+
+
+.lightblack{
+  color: rgb(134, 131, 131);
+ 
+}
+
+.btn{
+  background-color: #FF4F2F;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn a{
+text-decoration: none;
+color: #ffffff;
+}
+
+.btn:hover {
+  background-color:#ff5638;
+}
+
+.contentimage{
+  /* height: 50vh;
+  width: 10vw; */
+  margin: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  position: relative;
+}  
+
+
+
+.contain{
+  display: block;
+}
+
+.name{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.topic{
+color:#FF4F2F;
+margin: auto;
+}
+
+.cardscontainer{
+  position: absolute;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.card{
+  background-color: #F0F0F0;
+  position: relative;
+  display: block;
+  margin: 20px; 
+  width: 60%;
+  padding-left: 10px;
+}
+
+ .card img{
+  position: relative;
+  float:right;
+} 
+
+/*footer*/
+.footer1{
+  margin-top:376px;
+  margin-left: 10px;
+  height: 400px;
+  /* width: 100vh; */
+  background-color: black;
+  position: absolute;
+  display: flex;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.vline{
+  border-left: 2px solid #000; 
+  height: 100px;
+  margin-left: 2px;
+}
+.vertical-line{
+  border-left: 2px solid #aca9a9;
+  height: 200px;
+  margin-top: 100px; 
+  right: 20vw; 
+  position: absolute;
+  float:right;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.endtext{
+  height: 200px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 80vw;
+  position: relative;
+  padding-left: 10px;
+  display: block;
+  float:right; 
+}
+
+ .endtext img{
+position: relative;
+margin-top: 10px;
+width: 50px;
+height: 50px;
+} 
+
+.nexudus{
+  margin-top: 100px;
+  color: #ffffff;
+  text-decoration:underline;
+}
+
+.nexudus:hover{
+  color: #ff4c05;
+  text-decoration:underline; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .contents-container {
+    display: block;
+    background-color: #F0F0F0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .contents-text {
+    margin-left: 20px; 
+    align-items: center;
+    justify-content: center
   }
+
+
+  .cardscontainer{
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  .card{
+    background-color: #F0F0F0;
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin: 20px; 
+    width: 90vw;
+    padding-left: 10px;
+  }
+
+  .card img{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    float:right;
+    transform-origin: right bottom;
+    transform: scale(0.7);
+  }
+
+
+  .footer1{
+    margin-top:376px;
+    margin-left: 10px;
+    height: 400px;
+    /* width: 100vh; */
+    background-color: black;
+    position: absolute;
+    display: block;
+    color: white;
+  }
+
+  
+  
+.vertical-line{
+  border-top: 2px solid #aca9a9;
+  width: 80vh;
+  margin-top: 100px; 
+  bottom: 20vw; 
+  position: absolute;
+  align-items: center;
+  /* float:right; */
+  visibility: hidden;
+}
+
+.endtext{
+  height: 200px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 80vw;
+  position: relative;
+  padding-left: 10px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+ .endtext img{
+position: relative;
+margin-top: 10px;
+width: 50px;
+height: 50px;
+} 
+
+
 }
